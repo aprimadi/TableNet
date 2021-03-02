@@ -1,7 +1,10 @@
 dataset/
-
+env/
 .ipynb_checkpoints/
+saved_model/
+__pycache__/
 
+.DS_Store
 .vscode
 
 *.jpg

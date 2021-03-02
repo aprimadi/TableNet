@@ -26,6 +26,9 @@ if __name__ == "__main__":
     final_col_directory = './dataset/column_mask/'
     final_table_directory = './dataset/table_mask/'
 
+    os.makedirs(final_col_directory, exist_ok=True)
+    os.makedirs(final_table_directory, exist_ok=True)
+
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         # Find all the xml files
@@ -33,7 +36,7 @@ if __name__ == "__main__":
             filename = filename[:-4]
 
             # Parse xml file
-            tree = ET.parse('./dataset/Marmot/' + filename + '.xml')
+            tree = ET.parse('./dataset/Marmot_data/' + filename + '.xml')
             root = tree.getroot()
             size = root.find('size')
 
