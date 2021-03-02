@@ -84,3 +84,4 @@ class TableNet:
         model = tf.keras.Model(inputs=inputs, outputs=[table_mask, column_mask], name='tablenet')
 
         return model
+
