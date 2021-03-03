@@ -1,6 +1,7 @@
 import tensorflow as tf
 
-from tensorflow.keras.layers import Conv2D, Conv2DTranspose, UpSampling2D, Dropout, Concatenate
+from tensorflow.keras.layers import Conv2D, Conv2DTranspose, UpSampling2D
+from tensorflow.keras.layers import Dropout, Concatenate
 
 INPUT_SHAPE = (256, 256, 3)
 
