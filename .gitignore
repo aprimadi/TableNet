@@ -3,7 +3,9 @@ env/
 .ipynb_checkpoints/
 saved_model/
 __pycache__/
+mymodel_*/
 
+vimsession
 .DS_Store
 .vscode
 

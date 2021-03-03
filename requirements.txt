@@ -1,5 +1,8 @@
 jupyter==1.0.0
 matplotlib==3.3.4
+opencv-python==4.5.1
 Pillow==8.1.0
 pydot==1.4.2
+pytesseract==0.3.7
 tensorflow==2.4.1
+

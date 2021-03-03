@@ -82,6 +82,8 @@ class TableNet:
         column_mask = TableNet.build_column_decoder(x, pool_layers[0], pool_layers[1])
 
         model = tf.keras.Model(inputs=inputs, outputs=[table_mask, column_mask], name='tablenet')
+        table_model = tf.keras.Model(inputs=inputs, outputs=table_mask, name='tablenet_table')
+        column_model = tf.keras.Model(inputs=inputs, outputs=column_mask, name='tablenet_column')
 
-        return model
+        return model, table_model, column_model
 
